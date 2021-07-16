@@ -4,124 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="../static/contact.css">
+    <link rel="shortcut icon" type="image/png" href="../imgs/logo.png">
+    <link rel="stylesheet" href="../static/css/all.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <title>Contact us</title>
+    <title>Resume</title>
 </head>
 <body>
 <div class="container">
     <nav class="nav-bar">
         <div class="side-logo">
             <div class="logo">
-                <div><p>J</p></div>
-                <p><strong>Jhon </strong>Doe</p>
+                <div><p><img src="../imgs/logo.png" alt="" style="object-fit: cover; transform: scale(0.15); margin-left: 3px;"></p></div>
+                <p><strong>SaHul</strong> Kola</p>
             </div>
         </div>
         <div class="nav-contents">
             <div class="contents">
                 <ul>
-                    <a href="aboutme.html "><li>About Me</li></a>
+                    <a href="aboutme.html"><li>About Me</li></a>
                     <a href="resume.html"><li>Resume</li></a>
-                    <a href="portfolio.html"><li>Portfolio</li></a>
-                    <a href="contact.html"><li class="bold">Contact</li></a>
+                    <a href="portfolio.html" ><li>Portfolio</li></a>
+                    <a href="contact.html"><li   class="bold" >Contact</li></a>
                 </ul>
             </div>
         </div>
     </nav>
-<header>
+    <header>
         <div class="contact_area">
         <div class="contact ">
             <h1>Contact</h1>
-            <div class="sub_ti">
-                <h4>Get in touch</h4>
-            </div>
         </div>
         </div>
     </header>
+    <h2>Get in touch</h2>
+    <main>
 
-      <div class="container">
-          <div class="row">
-                  <div class=" col-xs-12 col-sm-4 ">
-                  <div class="info_icon">
-                      <div class="icon_block">
-                          <div class="icon">
-                               <i class="fas fa-map-marker-alt"></i>
-                          </div>
-                          <div class="icon_text">
-                              <h4 style="font-size:18px ;">Lorem ipsum</h4>
-                              <p style="font-size:12.88px ;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                          </div>
-                      </div>
-                     <div class="icon_block">
-                          <div class="icon">
-                            <i class="fas fa-envelope"></i>
-                          </div>
-                          <div class="icon_text">
-                              <h4 style="font-size:18px ;">Lorem ipsum</h4>
-                              <p style="font-size:12.88px ;">Mail me at the given address or use the contact form.</p>
-                          </div>
-                      </div>
-                  </div>
-</div>
-<div class=" col-xs-12 col-sm-8 ">
-
-                    <div class="title">
-                      <h2>
-                        How Can I Help You?
-                    </h2>  
-                    </div>
-                    <form class="contact-form"  method="post">
-
-                      <div class="messages"></div>
-
-                      <div class="controls two-columns">
-                        <div class="fields clearfix">
-                          <div class="left-column">
-                            <div class="form-group form-group-with-icon">
-                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
-                              <div class="form-control-border"></div>
-                              <div class="help-block with-errors"></div>
-                            </div>
-
-                            <div class="form-group form-group-with-icon">
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
-                              <div class="form-control-border"></div>
-                              <div class="help-block with-errors"></div>
-                            </div>
-
-                            <div class="form-group form-group-with-icon">
-                              <input id="form_name" type="text" name="subject" class="form-control" placeholder="Subject" required="required" data-error="Subject is required.">
-                              <div class="form-control-border"></div>
-                              <div class="help-block with-errors"></div>
-                            </div>
-                          </div>
-                          <div class="right-column">
-                            <div class="form-group form-group-with-icon">
-                              <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="7" required="required" data-error="Please, leave me a message."></textarea>
-                              <div class="form-control-border"></div>
-                              <div class="help-block with-errors"></div>
-                            </div>
-                          </div>
-                        </div>      
-                        <input type="submit" class="button btn-send disabled" value="Send message">
-                      </div>
-                    </form>
-                     </div>
-                </div>
-              </div>
-              <footer>
+      <div class="address">
+        <div>
+        <i class="fad fa-map-marker-alt"></i>
+        <p>Hyderabad <span></br> I am based out of Hyderabad,Telangana</span></p>
+        </div>
+        <div>
+        <i class="fad fa-envelope"></i>
+        <p>mail2sahul.js@gmail.com <span> </br>Mail me at the given address or Use the contact form. </span></p>
+        </div>
+      </div>
+      <div class="address">
+        <h3>How can I help you?</h3>
+        <form action="">
+          <div>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Mobile Number" maxlength="10" required>
+             <button>Send Message</button>
+          
+        </div>
+          <div>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+            </div>
+          <div>
+           </div>
+        </form>
+      </div>      
+      </main>
+    <main id="main-two">
+    </main>     
+    <footer>
         <div class="footer-contents">
             <div class="contents">
                 <ul>
-                    <a href="#"><li>Linked In</li></a>
-                    <a href="#"><li>GitHub</li></a>
-                    <a href="#"><li>Twitter</li></a>
-                    <a href="#"><li>Facebook</li></a>
-                    <a href="#"><li>Email</li>
+                    <a href="https://www.linkedin.com/in/sahulkola/" target="_blank"><li>Linked In</li></a>
+                    <a href="https://github.com/sahulkola" target="_blank"><li>GitHub</li></a>
+                    <a href="https://twitter.com/sa_hul"target="_blank"><li>Twitter</li></a>
+                    <a href="https://www.facebook.com/lubzuhaldetym"target="_blank"><li>Facebook</li></a>
+                    <a href="mailto:mail2sahul.js@gmail.com"target="_blank"><li>Email</li></a>
                 </ul>
-                <p class="copyrights">&copy 2021 All rights reserved. UncertainCo.</p>
+                <p class="copyrights">&copy 2021 All rights reserved <a href="aboutme.html" style="cursor:pointer" >Sahul Kola.</a></p>
             </div>
-
         </div>
     </footer>
    </div>
