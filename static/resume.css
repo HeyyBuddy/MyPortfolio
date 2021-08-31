@@ -93,6 +93,83 @@ body {
     align-self: flex-end;
     list-style-type: none;
 }
+
+#side-toggle {
+    display: none;
+}
+#side-toggle:checked ~ .side-bar {
+    right: 0px;
+    transition: 1s ease;
+    z-index: 2;
+}
+#side-toggle:checked ~ .toggle {
+    z-index: 100;
+}
+
+#side-toggle:not(:checked) ~ .side-bar {
+    right: -500px;
+    transition: 1s ease;
+}
+.toggle {
+    position: absolute;
+    right: 20px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0,0.25);
+    width: 50px;
+    height: 50px;
+}
+.toggle label i {
+    font-size: 32px;
+    color: #f1d302;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.side-bar {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    right: -500px;
+    top: -10px;
+    z-index: 100;
+    background: rgba(0,0,0,0.5);
+    width: 60%;
+}
+.side-bar ul {
+    left: 0;
+    margin-left: 0;
+    padding-left: 10;
+    margin-top: 80px;
+    list-style-type: none;
+}
+.side-bar ul i {
+    font-size: 20px;
+}
+.side-bar ul a li {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 25% 75%;
+   
+}
+.side-bar ul li {
+    padding: 5px 0px;
+    margin: 10px 10px 10px -10px;
+    list-style-type: none;
+}
+.side-bar ul a li {
+    font-size: 20px;
+    font-weight: bolder;
+}
+.side-bar ul a {
+    color: #fdfffc;
+}
+.side-bar ul li:active {
+    color: #f1d302;
+    transition: 0.15s ease ;
+}
+
 .bold {
     font-weight: 500;
     color: whitesmoke;
@@ -330,12 +407,17 @@ footer {
     padding:0;
     color: #ddd;
 }
+.ham-burger {
+    visibility: hidden;
+}
 
 @media(max-width: 900px) {
     body {
         background: #222;
     }
-
+.ham-burger {
+    visibility: visible;
+}
     .container {
         width: 100%;
         margin: auto;
